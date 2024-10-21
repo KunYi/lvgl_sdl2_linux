@@ -1,8 +1,21 @@
-# LVGL for frame buffer device
+# LVGL for SDL2
 
-LVGL configured to work with /dev/fb0 on Linux.
+This repository contains LVGL configured to work with SDL2 on Linux.
 
-When cloning this repository, also make sure to download submodules (`git submodule update --init --recursive`) otherwise you will be missing key components.
+## Cloning the Repository
 
-Check out this blog post for a step by step tutorial:
-https://blog.lvgl.io/2018-01-03/linux_fb
+When cloning this repository, make sure to include submodules to get all necessary components:
+
+```
+git clone https://github.com/KunYi/lvgl_sdl2_linux.git --recurse-submodules
+```
+
+Alternatively, if you've already cloned the repository without submodules, you can initialize and update them with:
+
+```
+git submodule update --init --recursive
+```
+
+## About
+
+This project provides a setup for using LVGL (Light and Versatile Graphics Library) with SDL2 on Linux systems. It's designed to make it easy to develop and test LVGL-based user interfaces on desktop Linux environments.
